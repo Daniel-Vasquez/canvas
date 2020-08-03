@@ -3,6 +3,11 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Dibujando con canvas</title>
+	<style>
+		#texto_lineas {
+			width: 80px;
+		}
+	</style>
 </head>
 
 <body>
@@ -47,10 +52,13 @@
 				dibujarLinea(colorcito, 0, yi, xf, 500);
 				console.log("Linea " + l);
 			}
-
-			dibujarLinea(colorcito, 1, 1, 1, 499);
-			dibujarLinea(colorcito, 1, 499, 499, 499);
+			dibujarLinea("purple", 1, 1, 1, 499);
+			dibujarLinea("purple", 1, 499, 499, 499);
 		}
+		
+		dibujarLinea("purple", 1, 1, 1, 499);
+		dibujarLinea("purple", 1, 499, 499, 499);
+
 	</script>
 </body>
 
